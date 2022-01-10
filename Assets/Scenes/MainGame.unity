@@ -123,6 +123,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &124279149 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 602330724864782542, guid: d4e09704f8fc7b943bcb74d4d6fbaf66, type: 3}
+  m_PrefabInstance: {fileID: 602330725075535199}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &124279155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124279149}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef2766904cc73a64781e0d96445252e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &237764998
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,7 +182,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &331509183
 GameObject:
@@ -209,7 +226,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &400821094
 GameObject:
@@ -499,7 +516,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.1487806, y: 1}
+    m_SensorSize: {x: 1.7344913, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -515,13 +532,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611884229}
-  m_LocalRotation: {x: -0.23537914, y: -0.0011839522, z: 0.0003915092, w: -0.97190285}
-  m_LocalPosition: {x: 0, y: 5.69, z: -9.78}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400821095}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 963194228}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &615260885
 GameObject:
@@ -762,7 +779,8 @@ Transform:
   m_LocalRotation: {x: -0.23537914, y: -0.0011839522, z: 0.0003915092, w: -0.97190285}
   m_LocalPosition: {x: 0, y: 5.69, z: -9.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 611884231}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 20.78, y: 0, z: 0}
@@ -1028,13 +1046,65 @@ RectTransform:
   - {fileID: 526075288}
   - {fileID: 1064550731}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1828985952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1828985953}
+  - component: {fileID: 1828985954}
+  m_Layer: 0
+  m_Name: JsonObj
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1828985953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828985952}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2231355, y: 5.6086154, z: -5.6437016}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1828985954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828985952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67fc675cb0f37074e844cc319b337e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jsonURL: https://s3.ap-south-1.amazonaws.com/superstars.assetbundles.testbuild/doofus_game/doofus_diary.json
+  jsnData:
+    player_data:
+      speed: 0
+    pulpit_data:
+      min_pulpit_destroy_time: 0
+      max_pulpit_destroy_time: 0
+      pulpit_spawn_time: 0
+  isJsonLoaded: 0
 --- !u!1 &1880144878
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,6 +1120,7 @@ GameObject:
   - component: {fileID: 1880144883}
   - component: {fileID: 1880144884}
   - component: {fileID: 1880144885}
+  - component: {fileID: 1880144886}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1141,7 +1212,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880144878}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b3f82629e832ea4d99a1e8b20373585, type: 3}
   m_Name: 
@@ -1175,6 +1246,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b08650e5d50cc47b7443bbaad432ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1880144886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880144878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24345798c8e294c4d92ebd5c112a81d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
 --- !u!1001 &602330725075535199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1182,6 +1266,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 602330724864782537, guid: d4e09704f8fc7b943bcb74d4d6fbaf66, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 602330724864782538, guid: d4e09704f8fc7b943bcb74d4d6fbaf66, type: 3}
       propertyPath: m_RootOrder
       value: 2
