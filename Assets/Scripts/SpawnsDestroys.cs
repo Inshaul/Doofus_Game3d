@@ -35,7 +35,7 @@ public class SpawnsDestroys : MonoBehaviour
 
     private void OnCollisionEnter(Collision coll)
     {
-        if (coll.gameObject.name == "destroyer")
+        if (coll.gameObject.name == "Destroyer")
         {
             Destruction();
         }
